@@ -26,6 +26,7 @@ CREATE
 - Criação de novos anúncios
 
 READ
+- Leitura do usuário ativo para personalização 
 - Leitura dos produtos cadastrados (Meu Carrinho)
 
 UPDATE
