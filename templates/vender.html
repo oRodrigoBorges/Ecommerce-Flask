@@ -1,0 +1,15 @@
+{% extends "templatebase.html" %}
+
+{% block templatebase %}
+
+    <form action="/vender" method="post">
+        <label>Nome do Produto</label><br>
+        <input id="nomeDoProduto" name="nomeDoProduto"><br>
+        <label>Valor do Produto</label><br>
+        <input id="valorDoProduto" name="valorDoProduto"><br>
+        <label>Descrição do Produto</label><br>
+        <input id="descricaoDoProduto" name="descricaoDoProduto"><br>
+        <button type="submit">Criar Novo Produto</button>
+    </form>
+
+{% endblock templatebase %}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/signUp.css')}}">
+    </head>
+    <body class="containerBody">
+        <div class="containerLogin">
+            <form class="containerLogin" action="/cadastroUsuarioTreinamento" method="post">
+                <input class="elementoForm" placeholder="Nome de Usuário" id="user" name="user">
+                <input class="elementoForm" placeholder="Senha" id="password" name="password">
+                <input class="elementoForm" placeholder="Confirme sua senha" id="confirmaPassword" name="confirmaPassword">
+                <button class="elementoForm" type="submit">Criar Novo Usuário</button>
+            </form>
+        </div>
+    </body>
+</html>

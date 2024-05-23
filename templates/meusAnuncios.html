@@ -1,0 +1,13 @@
+{% extends "templatebase.html" %}
+
+{% block templatebase %}
+
+    Os anúncios cadastrados são:<br><br>
+
+    {% for i in listaDeProdutos %}
+        <ul>
+            Nome do Produto: {{i.nome}} <br> Valor do Produto: {{i.valor}} <br> Descrição do Produto: {{i.descricao}}
+        </ul>
+    {% endfor %}
+
+{% endblock templatebase %}

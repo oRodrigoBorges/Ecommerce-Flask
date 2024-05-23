@@ -1,0 +1,16 @@
+.containerBody {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 620px; /* Aprender a colocar a tela como máximo disponível de maneira automática */
+}
+
+.containerLogin {
+    display: flex;
+    flex-direction: column;
+}
+
+.elementoLogin {
+    padding: .8em 1.5em .8em 1.5em;
+    margin:  .2em;
+}

@@ -1,0 +1,112 @@
+/* Início do CSS de templatebase.html */
+.bodyContainer {
+    font-family: monospace;
+    font-size: 10pt;
+}
+
+a {
+    text-decoration: none;
+}
+
+.suaConta {
+    border-right: solid .5px grey;
+    padding: 2px 12.5px 2px 0;
+}
+
+.novoUsuario {
+    border-right: solid .5px grey;
+    padding: 2px 12.5px 2px 0;
+}
+
+/* .headerContainer {
+    height: auto;
+    margin-top: 2em;
+} */
+
+.headerNavContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1em 0 1em;
+    margin-right: 4em;
+}
+
+.headerEsquerdo {
+    display: flex;
+    align-items: center;
+    margin-left: 4em;
+}
+
+.barraDePesquisa {
+    width: 35em;
+}
+
+.headerDireito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    width: 20em;
+    margin-right: 5px;
+}
+
+.asideContainer {
+    margin: 2em;
+}
+
+.mainContainer {
+    margin: 2em;
+}
+
+.footerContainer {
+    /* position: absolute;
+    left: 0;
+    bottom: 0; */
+}
+
+.footerSectionContainer {
+    margin: 3em;
+}
+
+.templateBaseIconHeader {
+    width: auto;
+    height: 128px;
+    margin: 0 3em 0 0;
+}
+
+.templateBaseIconHeaderMenu {
+    width: 80px;
+    height: auto;
+}
+
+.footerTecnologiasUtilizadas {
+    display: grid;
+}
+
+.tituloFooter {
+    text-align: center;
+    font-family: monospace;
+    margin: 0 0 3em 0;
+}
+
+.footerColunaUm {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerColunaDois {
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconeTecnologia {
+    width: 80px;
+    height: auto;
+}
+
+/* Início do CSS de minhaconta.html */
+
+.templateBaseMenuContainer {
+    display: flex;
+    flex-direction: column;
+}

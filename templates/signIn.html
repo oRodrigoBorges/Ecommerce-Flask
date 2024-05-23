@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/signIn.css')}}">
+    </head>
+    <body class="containerBody">
+        <form class="containerLogin" action="/signIn" method='post'>
+            <input class="elementoLogin" placeholder="Usuário" id="confirmaUsuario" name="confirmaUsuario">
+            <input class="elementoLogin" placeholder="Senha" id="confirmaSenha" name="confirmaSenha">
+            <button class="elementoLogin">Enviar</button>
+            <p class="elementoLogin">Esqueceu sua senha? <a href="{{url_for('signUp')}}">Clique aqui</a></p>
+            <button class="elementoLogin">Novo Usuário</button>
+        </form>
+    </body>
+</html>

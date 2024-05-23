@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/reset.css')}}">
+        <link rel='stylesheet' href="{{url_for('static', filename='css/style.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/signIn.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/signUp.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/minhaconta.css')}}">
+    </head>
+    <body class="bodyContainer">
+        <header class="headerContainer">
+            <nav class="headerNavContainer">
+                <nav class="headerEsquerdo">
+                    <a href="/anuncios"><img src="{{url_for('static', filename='svg/icon-flask-512.svg')}}" class="templateBaseIconHeader"></a>
+                    <input class="barraDePesquisa" placeholder="Barra de pesquisa">
+                </nav>
+                <nav class="headerDireito">
+                    <a class="suaConta" href="{{url_for('minhaConta')}}">Sua Conta</a>
+                    <a class="novoUsuario" href="{{url_for('signUp')}}">Novo Usuário</a>
+                    <a class="carrinho" href="{{url_for('sobreOProjeto')}}">O Projeto</a>
+                </nav>
+            </nav>
+        </header>
+        <section class="mainContainer">
+            {% block templatebase %}
+            
+            {% endblock templatebase %}
+        </section>
+        
+        <!-- <footer class="footerContainer">
+            <section class="footerSectionContainer">
+                <p>Este Ecommerce faz parte do meu roteiro de treinamento das tecnologias HTML, CSS, JavaScript, Python, Flask e MySql. Iniciei os estudos e desenvolvimento deste projeto no dia 15/05/2024 e pretendo atualizar os códigos com os conhecimentos adquiridos no decorrer do tempo.</p>
+            </section>
+            <section class="footerTecnologiasUtilizadas footerSectionContainer">
+                <h1 class="tituloFooter">Tecnologias Utilizadas</h1>
+                <div class="footerColunaUm">
+                    <img class="iconeTecnologia" src="{{url_for('static', filename='png/icons-html.png')}}">
+                    <img class="iconeTecnologia" src="{{url_for('static', filename='png/icons-css.png')}}">
+                    <img class="iconeTecnologia" src="{{url_for('static', filename='png/icons-javascript.png')}}">
+                </div>
+                <div class="footerColunaDois">
+                    <img class="iconeTecnologia" src="{{url_for('static', filename='png/icons-python.png')}}">
+                    <img class="iconeTecnologia" src="{{url_for('static', filename='png/icons-frasco.png')}}">
+                    <img class="iconeTecnologia" src="{{url_for('static', filename='png/icons-mysql.png')}}">
+                </div>
+            </section>
+        </footer> -->
+        
+    </body>
+</html>
