@@ -8,10 +8,14 @@ Não utilizar inteligências artificiais para absolutamente nada.
 
 Comentar o código explicando seu funcionamento para estudo posterior.
 
+Utilizar conceitos de herança e templates Flask.
+
+Implementar a metodologia de desenvolvimento TDD.
+
 Criar classes para:
 
-- Novos Produtos
-- Novos Usuários
+- Novos Usuários 
+- Novos Produtos 
 
 ### Banco de Dados ###
 
