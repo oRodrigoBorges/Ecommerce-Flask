@@ -4,6 +4,10 @@ Criação de um protótipo de Ecommerce Flask para estudo das tecnologias HTML, 
 
 ### Regras ###
 
+Não utilizar inteligências artificiais para absolutamente nada.
+
+Comentar o código explicando seu funcionamento para estudo posterior.
+
 Criar classes para:
 
 - Novos Produtos
