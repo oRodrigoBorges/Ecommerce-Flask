@@ -16,7 +16,7 @@ class novoAnuncio:
 
 listaDeProdutos = []
 
-### Rotas e Funções ###
+### Rotas e Funções Gerais ###
 
 @app.route("/")
 def base():
