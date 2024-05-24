@@ -56,6 +56,8 @@ def vender():
 def meusAnuncios():
     return render_template("meusAnuncios.html", listaDeProdutos=listaDeProdutos)
 
+### Funções Para Conexão Com o Bando de Dados MySQL WorkBench ###
+
 @app.route("/novoUsuario", methods=['POST'])
 def novoUsuario():
     
