@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 ### Classes ###
 
-class novoAnuncio:
+class novoAnuncioObjeto:
     def __init__(self, nome, valor, descricao):
         self.nome = nome
         self.valor = valor
@@ -15,6 +15,7 @@ class novoAnuncio:
 ### Listas ###
 
 listaDeProdutos = []
+listaDeNovosAnuncios = []
 
 ### Rotas e Funções Gerais ###
 
@@ -92,6 +93,38 @@ def novoUsuario():
                 print("Conexão ao MySQL finalizada")
     
         return render_template("signIn.html")
+
+@app.route("/novoAnuncio", methods=['POST'])
+def novoAnuncio():
+
+    nome = request.form.get("nomeDoProduto")
+    valor = request.form.get("valorDoProduto")
+    descricao = request.form.get("descricaoDoProduto")
+   
+    try:
+        conexao = mysql.connector.connect (
+        host='localhost', 
+        database='produtosCadastrados', 
+        user='root', 
+        password='123456'
+    )
+
+        inserirNovoProduto = f'INSERT INTO produtosCadastrados (nomeDoProduto, valorDoProduto, descricaoDoProduto) VALUES ("{nome}", "{valor}", "{descricao}")'
+
+
+        cursor = conexao.cursor()
+        cursor.execute(inserirNovoProduto)
+        conexao.commit()
+        print(cursor.rowcount, "Registros inseridos na tabela!")
+        cursor.close()
+    except Error as erro:
+        print("Falha ao inserir dados no MySQL: {}".format(erro))
+    finally:
+        if (conexao.is_connected()):
+            conexao.close()
+            print("Conexão ao MySQL finalizada")
+
+    return render_template("templatebase.html")
 
 if __name__ == '__main__':
   app.run()
