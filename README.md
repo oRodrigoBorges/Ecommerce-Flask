@@ -1,6 +1,17 @@
-Objetivos:
+### Objetivos ###
 
 Criação de um protótipo de Ecommerce Flask para estudo das tecnologias HTML, CSS, JavaScript, Python, Flask e MySQL
+
+A aplicação precisa ter obrigatoriamente: 
+
+- Framework web que utilize banco de dados (Flask)
+- Script web (Javascript)
+- Nuvem (Pendente)
+- API (Pendente)
+- Acessibilidade (Pendente)
+- Controle de versão (GitHub)
+- Testes (TDD)
+- Análise de dados (Pendente)
 
 ### Regras ###
 
@@ -12,7 +23,7 @@ Utilizar conceitos de herança e templates Flask.
 
 Implementar a metodologia de desenvolvimento TDD.
 
-Criar classes para:
+Criar, no mínimo, classes para:
 
 - Novos Usuários 
 - Novos Produtos 
