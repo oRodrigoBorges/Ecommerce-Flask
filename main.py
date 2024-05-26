@@ -153,8 +153,9 @@ def lerAnuncio():
         if (conexao.is_connected()):
             conexao.close()
             print("Conexão ao MySQL finalizada")
-
-    return render_template("meusAnuncios.html", listaLerProduto=listaLerProduto)
+            
+     # A variável var foi criada apenas para estudo
+    return render_template("meusAnuncios.html", listaLerProduto=listaLerProduto, var=listaLerProduto[0][0] )
 
 if __name__ == '__main__':
   app.run()
