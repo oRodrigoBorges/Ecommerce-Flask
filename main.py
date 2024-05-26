@@ -104,12 +104,12 @@ def novoAnuncio():
     try:
         conexao = mysql.connector.connect (
         host='localhost', 
-        database='produtosCadastrados', 
+        database='dbecommerce', 
         user='root', 
         password='123456'
     )
 
-        inserirNovoProduto = f'INSERT INTO produtosCadastrados (nomeDoProduto, valorDoProduto, descricaoDoProduto) VALUES ("{nome}", "{valor}", "{descricao}")'
+        inserirNovoProduto = f'INSERT INTO dbanuncios (nome, valor, descricao) VALUES ("{nome}", "{valor}", "{descricao}")'
 
 
         cursor = conexao.cursor()
