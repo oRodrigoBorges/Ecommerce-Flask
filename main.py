@@ -41,7 +41,8 @@ def minhaConta():
 @app.route("/sobreOProjeto")
 def sobreOProjeto():
     return render_template("sobreOProjeto.html")
-    
+
+# Função usada apenas como objeto de estudo e não deve estar no projeto final 
 @app.route("/vender", methods=['GET', 'POST'])
 def vender():
     if request.method == 'POST':
@@ -53,6 +54,7 @@ def vender():
         return render_template('templatebase.html')
     return render_template('vender.html')
 
+# listaDeProdutos=listaDeProdutos faz parte do objeto de estudos e não deve estar no projeto final
 @app.route("/meusAnuncios")
 def meusAnuncios():
     return render_template("meusAnuncios.html", listaDeProdutos=listaDeProdutos)
@@ -125,6 +127,34 @@ def novoAnuncio():
             print("Conexão ao MySQL finalizada")
 
     return render_template("templatebase.html")
+
+@app.route("/lerAnuncio", methods=['POST', 'GET'])
+def lerAnuncio():
+   
+    try:
+        conexao = mysql.connector.connect (
+        host='localhost', 
+        database='dbecommerce', 
+        user='root', 
+        password='123456'
+    )
+
+        lerProduto = f'SELECT * FROM dbanuncios'
+
+        cursor = conexao.cursor()
+        cursor.execute(lerProduto)
+        print(cursor.rowcount, "Retornando registro da tabela!")
+        resultado = cursor.fetchall() # ler o banco de dados
+        listaLerProduto = resultado
+        cursor.close()
+    except Error as erro:
+        print("Falha ao inserir dados no MySQL: {}".format(erro))
+    finally:
+        if (conexao.is_connected()):
+            conexao.close()
+            print("Conexão ao MySQL finalizada")
+
+    return render_template("meusAnuncios.html", listaLerProduto=listaLerProduto)
 
 if __name__ == '__main__':
   app.run()
