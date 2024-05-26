@@ -33,19 +33,19 @@ Criar, no mínimo, classes para:
 Realizar O CRUD completo, extraindo os valores das classes criadas, com:
 
 CREATE
-- Criação de novos usuários
-- Criação de novos anúncios
+- Criação de novos usuários (Ok)
+- Criação de novos anúncios (Ok)
 
 READ
-- Leitura do usuário ativo para personalização 
-- Leitura dos produtos cadastrados (Meu Carrinho)
+- Leitura do usuário ativo para personalização (Pendente)
+- Leitura dos produtos cadastrados (Meu Carrinho) (Ok)
 
 UPDATE
-- Atualização dos dados do usuário
-- Atualização dos anúncios
+- Atualização dos dados do usuário (Pendente)
+- Atualização dos anúncios (Pendente)
 
 DELETE
-- Apagar sua conta
-- Apagar seu anúncio
+- Apagar sua conta (Pendente)
+- Apagar seu anúncio (Pendente)
 
 DEVO SER HONESTO COMIGO MESMO, AO DESCOBRIR UM RECURSO OU SOLUÇÃO NOVA E ÚTIL, DEVO APRENDER E IMPLEMENTAR NO PROJETO
