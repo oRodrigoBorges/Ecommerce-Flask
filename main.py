@@ -72,12 +72,12 @@ def novoUsuario():
         try:
             conexao = mysql.connector.connect (
             host='localhost', 
-            database='usuariosCadastrados', 
+            database='dbecommerce', 
             user='root', 
             password='123456'
         )
     
-            inserirNovoUsuario = f'INSERT INTO usuariosCadastrados (user, password) VALUES ("{user}", "{password}")'
+            inserirNovoUsuario = f'INSERT INTO dbusuarios (user, password) VALUES ("{user}", "{password}")'
     
     
             cursor = conexao.cursor()
