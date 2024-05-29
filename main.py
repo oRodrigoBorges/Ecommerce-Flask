@@ -49,7 +49,7 @@ def vender():
         nome = request.form.get('nomeDoProduto')
         valor = request.form.get('valorDoProduto')
         descricao = request.form.get('descricaoDoProduto')
-        novoProduto = novoAnuncio(nome, valor, descricao)       
+        novoProduto = novoAnuncioObjeto(nome, valor, descricao)       
         listaDeProdutos.append(novoProduto)
         return render_template('templatebase.html')
     return render_template('vender.html')
